@@ -4,6 +4,8 @@
 
 基于 Taro4 + Vue3 + Webpack5 的多端开发模板
 
+已经集成了 Pinia、Nutui4、Sass 等常用技术栈，开箱即用，方便快速上手开发。
+
 ## 特性
 
 - [x] TypeScript
