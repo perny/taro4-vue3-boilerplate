@@ -16,7 +16,6 @@ export default {
     const counter = useCounterStore()
 
     const onAdd = () => {
-      console.log('惦记了')
       counter.count++
 
       // with autocompletion ✨

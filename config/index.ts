@@ -11,6 +11,7 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
     projectName: 'broadcast',
     date: '2025-7-30',
     designWidth (input) {
+      console.log('input', input?.file)
       // 配置 NutUI 375 尺寸
       if (input?.file?.replace(/\\+/g, '/').indexOf('@nutui') > -1) {
         return 375
@@ -46,6 +47,9 @@ export default defineConfig<'webpack5'>(async (merge, { command, mode }) => {
         chain.plugin('unplugin-vue-components').use(ComponentsPlugin({
           resolvers: [NutUIResolver({taro: true})]
         }))
+      },
+      miniCssExtractPluginOption: {
+        ignoreOrder: true
       },
       postcss: {
         pxtransform: {
