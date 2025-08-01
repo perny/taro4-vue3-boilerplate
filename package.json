@@ -1,8 +1,8 @@
 {
-  "name": "broadcast",
+  "name": "taro4-vue3-boilerplate",
   "version": "1.0.0",
   "private": true,
-  "description": "电台",
+  "description": "Taro4+vue3脚手架模板",
   "templateInfo": {
     "name": "vue3-pinia",
     "typescript": true,
