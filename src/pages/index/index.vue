@@ -5,11 +5,12 @@
       这里是 popup 的内容
     </nut-popup>
     <Counter title="按钮1" />
-    
+    <Location2 color="#000000" />
   </view>
 </template>
 
 <script lang="ts" setup>
+import { Location2 } from '@nutui/icons-vue-taro'
 import './index.scss'
 import Counter from '../../components/Counter.vue'
 import { ref } from 'vue';
